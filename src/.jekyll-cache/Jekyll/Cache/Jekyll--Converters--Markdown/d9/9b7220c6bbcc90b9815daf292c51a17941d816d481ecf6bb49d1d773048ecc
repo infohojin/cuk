@@ -1,0 +1,207 @@
+I"�<h1 id="14-입출력-시스템">14 입출력 시스템</h1>
+<hr />
+
+<p><img src="./img/os14_01.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_02.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_03.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_04.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_05.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_06.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_07.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_08.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_09.png" alt="" /></p>
+
+<h2 id="입출력-하드웨어">입출력 하드웨어</h2>
+
+<p><img src="./img/os14_10.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_11.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_12.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_13.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_14.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_15.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_16.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_17.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_18.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_19.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_20.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_21.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_22.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_23.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_24.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_25.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_26.png" alt="" /></p>
+
+<p>aaa</p>
+
+<h2 id="입출력-시스템의-구조">입출력 시스템의 구조</h2>
+
+<p><img src="./img/os14_27.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_28.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_29.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_30.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_31.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_32.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_33.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_34.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_35.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_36.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_37.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_38.png" alt="" /></p>
+
+<p>aaa</p>
+
+<h2 id="파일-정보-이용-실습">파일 정보 이용 실습</h2>
+
+<p><img src="./img/os14_39.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_40.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_41.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_42.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_43.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_44.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_45.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_46.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_47.png" alt="" /></p>
+
+<p>aaa</p>
+
+<h2 id="정리하기">정리하기</h2>
+
+<ol>
+  <li>입출력 장치는 <strong>속도가 느리고 자료를 표현하는 방식이 다양</strong>함</li>
+  <li>입출력 장치는 특정 포트나 버스에 연결되어 컴퓨터에 연결되며 <strong>입출력 제어기</strong>를 통하여 입출력 장치에게 명령어나 자료를 전달함</li>
+  <li><strong>폴링</strong> 방시과 <strong>입출력 시스템</strong> 방식을 사용하여 CPU가 직접 입출력 장치에게 데이터나 명령어를 직접 수행하거나, <strong>DMA</strong>를 이용하여 수행함</li>
+  <li>입출력 시스템은 실제 장치를 구동하는 <strong>장치 드라이버</strong>와 <strong>입출력 시스템</strong>으로 구분되어 사용자에게 일관된 인터페이스를 제공함</li>
+  <li>입출력 시스템 호출은 많은 <strong>CPU</strong>자원을 사용함. 문맥전환, 인터럽트 처리 및 자료 복사에 따른 오버헤드가 크므로 <strong>입출력 효율</strong>을 높여야 함</li>
+  <li><strong>stat()</strong> 함수를 호출하면 <strong>입출력 시스템</strong>의 구조체에 파일에 대한 다양한 정보가 저장되며 이를 이용하여 파일에 대한 여러 가지 정보를 획득할 수 있음</li>
+</ol>
+
+:ET

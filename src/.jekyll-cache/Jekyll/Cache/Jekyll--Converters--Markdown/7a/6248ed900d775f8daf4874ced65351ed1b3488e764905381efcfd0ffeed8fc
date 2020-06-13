@@ -1,0 +1,257 @@
+I"L<h1 id="프로세스간-통신">프로세스간 통신</h1>
+
+<p>#</p>
+
+<h2 id="학습목표">학습목표</h2>
+
+<ul>
+  <li>프로세스들간의 <code class="highlighter-rouge">통신 기법</code>중에서 널리 활용되고 있는 기법들을 활용할 수 있다.</li>
+  <li>프로세스들간에 데이터를 주고 받는 <code class="highlighter-rouge">예제코드를 작성</code>하여 프로세스간 통신 기법을 이해한다.</li>
+  <li></li>
+</ul>
+
+<h2 id="학습내용">학습내용</h2>
+
+<ol>
+  <li>프로세스간 통신의 개념</li>
+  <li>시그널(Signal)</li>
+  <li>파이프(pipe)와 피포(FIFO)</li>
+  <li>공유메모리</li>
+</ol>
+
+<h2 id="1프로세스간-통신의-개념">1.프로세스간 통신의 개념</h2>
+
+<p><img src="./img/os09_11.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_12.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_13.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_14.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_15.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_16.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_17.png" alt="" /></p>
+
+<p>aaa</p>
+
+<h2 id="2-시그널signal">2. 시그널(Signal)</h2>
+
+<p><img src="./img/os09_18.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_19.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_20.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_21.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_22.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_23.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_24.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_25.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_26.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_27.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_28.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_29.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_30.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_31.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_32.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_33.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_34.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_35.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_36.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_37.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_38.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_39.png" alt="" /></p>
+
+<p>aaa</p>
+
+<h2 id="3-파이프pipe와-피포fifo">3. 파이프(pipe)와 피포(fifo)</h2>
+
+<p><img src="./img/os09_40.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_41.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_42.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_43.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_44.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_45.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_46.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_47.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_48.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_49.png" alt="" /></p>
+
+<p>aaa</p>
+
+<h2 id="4공유-메모리">4.공유 메모리</h2>
+
+<p><img src="./img/os09_50.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_51.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_52.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_53.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_54.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_55.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_56.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_57.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_58.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_59.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_60.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_61.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_62.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_63.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_64.png" alt="" /></p>
+
+<p>aaa</p>
+
+<h2 id="정리하기">정리하기</h2>
+
+<ol>
+  <li>프로세스들은 서로 협력적인 작업을 수행하기 위해서 데이터를 주고 받는 작업이 필요하며, 유닉스 계열의 운영체제에서는 이를 지원하기 위해서 파이프, FIO, 세마포, 공유메모리, 메시지큐, 소켓등을 제공한다.</li>
+  <li>시그널(signal)은 다양하고 중요한 이벤트를 프로세스에게 알려주는 수단으로 활용된다.</li>
+  <li>시그널을 받은 프로세스는 수행중이던 작업을 중지하고 시그널을 처리하며 이를 위한 별도의 <code class="highlighter-rouge">시그널 핸들러</code>를 정의할 수 있다.</li>
+  <li>파이프(pipe)는 한 프로세스의 표준출력을 다른 프로세스의 표준입력으로 연결하는 방법이다.</li>
+  <li>피포(FIFO)느 이름을 가진 파이프라고도 하며, 특별한 장치 파일로 존재한다. FIFO파일을 생성한 이후에 데이터를 쓰거나 읽음으로서 프로세스간에 통신을 활 수 있다.</li>
+  <li><code class="highlighter-rouge">공유메모리</code>는 여러 프로세스가 함께 사용하는 메모리를 의미한다. 다라서 임의의 프로세스가 공유메모리에 데이터를 쓰면 다른 프로세스에서 해당 내용을 읽을 수 있다.</li>
+</ol>
+
+:ET

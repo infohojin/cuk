@@ -1,0 +1,391 @@
+I"P1<h1 id="프로세스간-통신">프로세스간 통신</h1>
+
+<p>#</p>
+
+<h2 id="학습목표">학습목표</h2>
+
+<ul>
+  <li>프로세스들간의 <code class="highlighter-rouge">통신 기법</code>중에서 널리 활용되고 있는 기법들을 활용할 수 있다.</li>
+  <li>프로세스들간에 데이터를 주고 받는 <code class="highlighter-rouge">예제코드를 작성</code>하여 프로세스간 통신 기법을 이해한다.</li>
+  <li></li>
+</ul>
+
+<h2 id="학습내용">학습내용</h2>
+
+<ol>
+  <li>프로세스간 통신의 개념</li>
+  <li>시그널(Signal)</li>
+  <li>파이프(pipe)와 피포(FIFO)</li>
+  <li>공유메모리</li>
+</ol>
+
+<h2 id="1프로세스간-통신의-개념">1.프로세스간 통신의 개념</h2>
+
+<p><img src="./img/os09_11.png" alt="" /></p>
+
+<p>aaa</p>
+
+<h2 id="프로세스간의-정보교환">프로세스간의 정보교환</h2>
+
+<p>운영체제는 기본적으로 프로세스들을 보하하기 위하여 임의의 프로세스가 다른 프로세스의 메모리에 접근하는 것을 금지하며, 오로지 <code class="highlighter-rouge">운영체제만 모든 프로세스의 메모리에 접근 가능</code>합</p>
+
+<p>프로세스들은 서로 <code class="highlighter-rouge">협력</code>적인 작업을 수행하기 위해서 정보를 주고받는 작업이 필요함</p>
+
+<p>프로세스간에 정보를 교환한다는 것은 프로세스의 독립적인 동작을 더 이상 유지하지 않기 때문에, 운영체제에게 정보교환과 관련한 시스템 함수를 호출해야 함</p>
+
+<p>프로세스간 통신을 지원하기 위한 대표적인 매커니즘</p>
+
+<ul>
+  <li>파이을 이용한 통신</li>
+  <li>시그널(signal)</li>
+  <li>파이프(pipe) 와 피포(fifo)</li>
+  <li>세마포(semaphore)</li>
+  <li>공유메모리(shared memory)</li>
+  <li>메시지큐(message queue) 와 소켓(socket)</li>
+</ul>
+
+<h3 id="시그널signal">시그널(signal)</h3>
+
+<ul>
+  <li>프로세스에게 <code class="highlighter-rouge">이벤트가 발생하였음</code>을 알려주는 방식</li>
+</ul>
+
+<p>예) ctrl+c 를 누르면 SIGINT가 발생하여 프로그램이 종료됨</p>
+
+<ul>
+  <li>시그널은 이벤트 발생만 알려주며 그 외의 데이터 전달에 사용할 수 없음</li>
+  <li>시그널을 수신한 프로세스는 기존의 동작을 멈추고 시그널 처리 절차를 수행함</li>
+  <li></li>
+</ul>
+
+<h3 id="파이프pipe와-피포fifo">파이프(pipe)와 피포(fifo)</h3>
+
+<ul>
+  <li>프로세스간에 정보교환을 위하여 <code class="highlighter-rouge">특수 파일</code>의 형태로 지원</li>
+  <li>파이프 = 부모/자식 프로세스간에 사용할 수 있는 “이름없는 파일”로서 역할</li>
+  <li>피포 = 부모/자식 프로세스 관계가 아니더라도 통신에 사용할 수 있는 “이름있는 파이프”</li>
+  <li>정보를 보내는 프로세스는 wite(0, 정보를 수신하는 프로세스는 read() 함수를 호출</li>
+</ul>
+
+<h3 id="메시지-큐message-queue">메시지 큐(message Queue)</h3>
+
+<ul>
+  <li>
+    <p>프로세스간에 가변길이의 메시지를 전달하기 위하여 커널 내부의일정 크기의 버퍼(mail box)를 이용하는 방식</p>
+  </li>
+  <li>
+    <p>메시지 쿠로 데이터를 전송할 때마다 시스템 호출</p>
+
+    <blockquote>
+      <p>문맥전환 발생</p>
+    </blockquote>
+  </li>
+  <li>
+    <p>데이터 복사도 2차례 발생</p>
+
+    <blockquote>
+      <p>속도가 느리고 시스템 부하가 많이 증가</p>
+    </blockquote>
+  </li>
+  <li>
+    <p>단방향 통신 경로로서 방향별로 1개씩의 메시지 큐를 사용</p>
+  </li>
+</ul>
+
+<h3 id="공유메모리-shared-memory">공유메모리 (shared Memory)</h3>
+
+<ul>
+  <li>여러 프로세스가 함께 사용하는 <code class="highlighter-rouge">공통의 메모리 공간</code></li>
+  <li>임의의 프로세스가 공유메모리에 데이터를 기록하고, 다른 프로세스에서 데이터를 읽음</li>
+</ul>
+
+<h2 id="2-시그널signal">2. 시그널(Signal)</h2>
+
+<p><img src="./img/os09_18.png" alt="" /></p>
+
+<p>aaa</p>
+
+<h3 id="시그널-기본-개념">시그널 기본 개념</h3>
+
+<p>시스널이란</p>
+
+<ul>
+  <li>
+    <p>다양하고 <code class="highlighter-rouge">중요한 이벤트</code>를 프로세스에게 전달하는 메커니즘</p>
+  </li>
+  <li>
+    <p>각 시그널은 정수 숫자를 가지며 별도의 <code class="highlighter-rouge">심볼(예:SIGINT)</code>로 표현함</p>
+  </li>
+  <li>
+    <p>프로세스는 시그널을 처리하기 위하여 별도의 <code class="highlighter-rouge">시그널 핸들러</code>를 보유할 수 있음</p>
+
+    <blockquote>
+      <p>시그널을 받으면 미리 약속된 시그널 핸들러가 호출되어 처리되거나, 또는 핸들러가 없는 경우에는 사전에 정의된 기본동작(현재 프로세스의 중단 혹은 시그널 무시)을 수행함</p>
+    </blockquote>
+  </li>
+</ul>
+
+<p>aaa</p>
+
+<p>시그널 발생형태</p>
+
+<ul>
+  <li>필요에 의한 소프트웨어적인 시그널</li>
+  <li>치명적인 오류 발생으로 인한 시그널</li>
+</ul>
+
+<p>시그널의 예</p>
+
+<ul>
+  <li>진행중인 프로세스를 ctrl+c 키를 눌러서 강제로 종료</li>
+  <li>“kill” 명령어를 이용한 프로세스 종료</li>
+  <li>wait()에서 깨어나기 (child process의 종료 혹은 상태 변화)</li>
+  <li>프로세스간의 이벤트 정보 교환</li>
+</ul>
+
+<p>aaa</p>
+
+<h3 id="시그널-처리과정">시그널 처리과정</h3>
+
+<p>일반적인 시그널 처리과정</p>
+
+<ol>
+  <li>프로세스 #2는 프로세스 #ㅂ에게 “signal-A”를 발생 시킴</li>
+  <li>시그널은 운영체제에 의해서 PCB(Process control Block)에 일시적으로 저장됨</li>
+  <li>PCB에 저장된 시그널은 잠시 후에 프로세스 #1에게 전달됨</li>
+  <li>프로세스 #1이 시그널을 처리할 핸들러를 가지고 있으면 핸들러가 수행됨</li>
+</ol>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_23.png" alt="" /></p>
+
+<p>aaa</p>
+
+<h4 id="시그널의-종류">시그널의 종류</h4>
+
+<ul>
+  <li>SIGABRT : abort 함수를 호출하면 보내지며, 이 시그널을 받으면 코어 덤프하고 종료</li>
+</ul>
+
+<p><img src="./img/os09_24.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_25.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_26.png" alt="" /></p>
+
+<p>aaa</p>
+
+<h2 id="시그널-전송방법">시그널 전송방법</h2>
+
+<p><img src="./img/os09_27.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_28.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_29.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_30.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_31.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_32.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_33.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_34.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_35.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_36.png" alt="" /></p>
+
+<p>aaa</p>
+
+<h2 id="함수">함수</h2>
+
+<p><img src="./img/os09_37.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_38.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_39.png" alt="" /></p>
+
+<p>aaa</p>
+
+<h2 id="3-파이프pipe와-피포fifo">3. 파이프(pipe)와 피포(fifo)</h2>
+
+<p><img src="./img/os09_40.png" alt="" /></p>
+
+<h2 id="파이프의-개념">파이프의 개념</h2>
+
+<h4 id="파이프pipe">파이프(pipe)</h4>
+
+<ul>
+  <li>
+    <p>한 프로세스의 표준출력을 다른 프로세스의 표준입력으로 연결하는 방법</p>
+  </li>
+  <li>
+    <p>작은 기능을 갖는 여러 개의 프로그램을 엮어서 하나의 큰 프로그램으로 구성할 수 있도록 함</p>
+  </li>
+  <li>
+    <p>유닉스/리눅스의 쉘에서 널리 활용되고 있음</p>
+  </li>
+</ul>
+
+<h4 id="파이프의-개념-1">파이프의 개념</h4>
+
+<p><img src="./img/os09_42.png" alt="" /></p>
+
+<h2 id="pipe-함수">pipe() 함수</h2>
+
+<p><img src="./img/os09_43.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_44.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_45.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_46.png" alt="" /></p>
+
+<p>aaa</p>
+
+<h2 id="fifo의-개념">FIFO의 개념</h2>
+
+<h4 id="파이프의-문제점">파이프의 문제점</h4>
+
+<ul>
+  <li>부모 프로세스와 자긱 프로세스간에서만 사용 가능함</li>
+  <li>프로세스가 종료되면 사라져서 영구적이지 못함</li>
+  <li>위와 같은 뭄제점을 해소하기 위해서 FIFO가 제안된</li>
+</ul>
+
+<h4 id="fifo--이름을-가진-파이프-named-pipe">FIFO = 이름을 가진 파이프 (named pipe)</h4>
+
+<ul>
+  <li>프로세스간의 부모/자식 관계에 상관없이 FIFO파일에 데이터를 쓰거나 읽음으로써 프로세스간에 통신을 수행할 수 있음</li>
+  <li>파일시스템 내에서 특수한 장치 파일로서 존재함</li>
+</ul>
+
+<h4 id="mkfifo">mkfifo()</h4>
+
+<p><img src="./img/os09_48.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_49.png" alt="" /></p>
+
+<p>aaa</p>
+
+<h2 id="4공유-메모리">4.공유 메모리</h2>
+
+<p><img src="./img/os09_50.png" alt="" /></p>
+
+<h2 id="공유-메모리의-개념">공유 메모리의 개념</h2>
+
+<h3 id="공유메모리">공유메모리</h3>
+
+<ul>
+  <li>운영체제 보호기능으로 인하여 프로세스 상호간에 메모리를 침범하지 못하기 때문에, 여러 프로세스가 이러한 제약 조건을 제거하는 것에 동의한다는 가정하에 메모리를 공유하는 방식</li>
+  <li>프로세스 상호간의 동의를 바탕으로 일정 메모리 영역을 공유 메모리 영역으로 제공함. 관련된 프로세스들은 자유롭게 데이터를 읽어나 쓰는 동작을 수행할 수 있음</li>
+  <li></li>
+</ul>
+
+<h4 id="특징">특징</h4>
+
+<ul>
+  <li>공유 메모리를 설정할 때에만 시스템 호출이 발생하고, <code class="highlighter-rouge">이후에는 운영체제가 관여하지 않기</code> 때문에 속도가 빠르고 cpu 성능 저하도 적음</li>
+  <li>여러 프로세스가 동시에 동일한 메모리 영역에 데이터 쓰기 동작 수행시 결과를 예측할 수 없음 =&gt;  프로세스간의 약속이나 <code class="highlighter-rouge">상호배제</code>가 필요</li>
+  <li>공유메모리 사용절차</li>
+</ul>
+
+<p>생성 -&gt; 부착 -&gt; 스기 -&gt; 일기 -&gt; 해제</p>
+
+<p><img src="./img/os09_53.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_54.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_55.png" alt="" /></p>
+
+<p>aaa</p>
+
+<h2 id="공유메모리-시스템-호출">공유메모리 시스템 호출</h2>
+
+<p><img src="./img/os09_56.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_57.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_58.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_59.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_60.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_61.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_62.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os09_63.png" alt="" /></p>
+
+<h2 id="확인하기">확인하기</h2>
+
+<p><img src="./img/os09_64.png" alt="" /></p>
+
+<h2 id="정리하기">정리하기</h2>
+
+<ol>
+  <li>프로세스들은 서로 협력적인 작업을 수행하기 위해서 데이터를 주고 받는 작업이 필요하며, 유닉스 계열의 운영체제에서는 이를 지원하기 위해서 파이프, FIO, 세마포, 공유메모리, 메시지큐, 소켓등을 제공한다.</li>
+  <li>시그널(signal)은 다양하고 중요한 이벤트를 프로세스에게 알려주는 수단으로 활용된다.</li>
+  <li>시그널을 받은 프로세스는 수행중이던 작업을 중지하고 시그널을 처리하며 이를 위한 별도의 <code class="highlighter-rouge">시그널 핸들러</code>를 정의할 수 있다.</li>
+  <li>파이프(pipe)는 한 프로세스의 표준출력을 다른 프로세스의 표준입력으로 연결하는 방법이다.</li>
+  <li>피포(FIFO)느 이름을 가진 파이프라고도 하며, 특별한 장치 파일로 존재한다. FIFO파일을 생성한 이후에 데이터를 쓰거나 읽음으로서 프로세스간에 통신을 활 수 있다.</li>
+  <li><code class="highlighter-rouge">공유메모리</code>는 여러 프로세스가 함께 사용하는 메모리를 의미한다. 다라서 임의의 프로세스가 공유메모리에 데이터를 쓰면 다른 프로세스에서 해당 내용을 읽을 수 있다.</li>
+</ol>
+
+:ET

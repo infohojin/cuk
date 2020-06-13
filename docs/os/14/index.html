@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--SEO--><title>JinyDev</title><!--부트스트랩4-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <style>
+            img {
+                max-width:100%;
+            }
+        </style>
+
+        <link rel="stylesheet" href="/assets/highlight.css">
+        <link rel="stylesheet" href="/assets/style.css">
+
+        <script data-ad-client="ca-pub-3321560028329475" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    </head>
+    <body><!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/">이호진(202031123)</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href=home.html target=_top>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=profile.html>Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=hobby.html target=mypage>Hobby</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=portfolio.html>Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=contact.html target=mypage>Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav><br>
+<!-- Page Content -->
+<div class="container">
+    <div class="row">
+        <!-- Post Content Column -->
+        <div class="col-lg-9">
+            <main role="main">
+                <section>
+                    <h1 id="14-입출력-시스템">14 입출력 시스템</h1>
+<hr />
+
+<h2 id="학습목표">학습목표</h2>
+
+<ul>
+  <li>운영체제의 <strong>입출력 시스템 구조</strong>를 설명할 수 있다.</li>
+  <li>입출력 하드웨어의 <strong>원리</strong>와 <strong>입출력 시스템</strong>을 기술할 수 있다.</li>
+  <li>입출력 <strong>성능의 주요 요소</strong>를 설명할 수 있다.</li>
+</ul>
+
+<h2 id="학습내용">학습내용</h2>
+
+<ol>
+  <li><a href="01">입출력 하드웨어</a></li>
+  <li><a href="02">입출력 시스템의 구조</a></li>
+  <li><a href="03">파일 정보 이용 실습</a></li>
+</ol>
+
+<h2 id="확인하기-퀴즈">확인하기 퀴즈</h2>
+
+<p><img src="./img/os14_47.png" alt="" /></p>
+
+<h2 id="정리하기">정리하기</h2>
+
+<ol>
+  <li>입출력 장치는 <strong>속도가 느리고 자료를 표현하는 방식이 다양</strong>함</li>
+  <li>입출력 장치는 특정 포트나 버스에 연결되어 컴퓨터에 연결되며 <strong>입출력 제어기</strong>를 통하여 입출력 장치에게 명령어나 자료를 전달함</li>
+  <li><strong>폴링</strong> 방시과 <strong>입출력 시스템</strong> 방식을 사용하여 CPU가 직접 입출력 장치에게 데이터나 명령어를 직접 수행하거나, <strong>DMA</strong>를 이용하여 수행함</li>
+  <li>입출력 시스템은 실제 장치를 구동하는 <strong>장치 드라이버</strong>와 <strong>입출력 시스템</strong>으로 구분되어 사용자에게 일관된 인터페이스를 제공함</li>
+  <li>입출력 시스템 호출은 많은 <strong>CPU</strong>자원을 사용함. 문맥전환, 인터럽트 처리 및 자료 복사에 따른 오버헤드가 크므로 <strong>입출력 효율</strong>을 높여야 함</li>
+  <li><strong>stat()</strong> 함수를 호출하면 <strong>입출력 시스템</strong>의 구조체에 파일에 대한 다양한 정보가 저장되며 이를 이용하여 파일에 대한 여러 가지 정보를 획득할 수 있음</li>
+</ol>
+
+
+                </section>
+            </main>
+        </div>
+
+        <!-- Sidebar Column -->
+        <div class="col-md-3">
+            <aside><ul class="list-group">
+    <li class="list-group-item active">Website</li>
+    <li class="list-group-item"><a href=home.html target=_top>Home</a></li>
+    <li class="list-group-item"><a href=profile.html>Profile</a></li>
+    <li class="list-group-item"><a href=hobby.html target=mypage>Hobby</a></li>
+    <li class="list-group-item"><a href=portfolio.html>Portfolio</a></li>
+    <li class="list-group-item"><a href=contact.html target=mypage>Contact</a></li>
+</ul>
+<br>
+</aside>            
+         </div>
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->  <!-- Footer -->
+  <footer class="py-3 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright all right reverved hojinlee 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer><!--부트스트랩4-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </body>
+</html>

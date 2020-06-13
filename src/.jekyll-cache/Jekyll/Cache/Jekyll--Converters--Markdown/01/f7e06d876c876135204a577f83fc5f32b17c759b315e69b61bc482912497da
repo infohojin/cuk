@@ -1,0 +1,59 @@
+I"6<h1 id="입출력-시스템의-구조">입출력 시스템의 구조</h1>
+
+<h2 id="1-입출력-인터페이스">1. 입출력 인터페이스</h2>
+
+<p><img src="./img/os14_28.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_29.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_30.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_31.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_32.png" alt="" /></p>
+
+<p>aaa</p>
+
+<h2 id="2커널-입추력-서브-시스템">2.커널 입추력 서브 시스템</h2>
+
+<p><img src="./img/os14_33.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_34.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_35.png" alt="" /></p>
+
+<p>aaa</p>
+
+<h2 id="3입출력-효율의-향상">3.입출력 효율의 향상</h2>
+
+<h4 id="입출력-효울이-중요한-이유">입출력 효울이 중요한 이유</h4>
+
+<p>실제 동작하는 프로그램은 대부분 입추력 중심이 많음</p>
+
+<p>CPU 성능은 상단히 빠르지만 입출력 장치의 속도는 대부분 느림</p>
+
+<blockquote>
+  <p>CPU 연산 코드를 최적화하여 성능을 포이는 것보다, 입출력 효율을 높이면 더욱 좋은 효과를 얻을 수 있음</p>
+</blockquote>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_37.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os14_38.png" alt="" /></p>
+
+:ET

@@ -1,0 +1,250 @@
+I"?<h1 id="11-가상메모리">11 가상메모리</h1>
+
+<p><img src="./img/os11_01.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_02.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_03.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_04.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_05.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_06.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_07.png" alt="" /></p>
+
+<p>aaa</p>
+
+<h2 id="학습목표">학습목표</h2>
+
+<ul>
+  <li>가상메모리의 개념과 원리를 기술할 수 있다.</li>
+  <li>요구 페이징과 페이지 대치 알괴즘, 그리고 물리 페이지 할당의 개념을 설명할 수 있다.</li>
+  <li>스패싱의 발생원인을 이해하고 해결 방식을 설명할 수 있다.</li>
+  <li></li>
+</ul>
+
+<h2 id="학습내용">학습내용</h2>
+
+<ol>
+  <li>가상 메모리의 개념</li>
+  <li>페이지 대치 알고리즘</li>
+  <li>스래싱</li>
+  <li></li>
+</ol>
+
+<h1 id="1가상-메모리의-개념">1.가상 메모리의 개념</h1>
+
+<p><img src="./img/os11_11.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_12.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_13.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_14.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_15.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_16.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_17.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_18.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_19.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_20.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_21.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_22.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_23.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_24.png" alt="" /></p>
+
+<p>aaa</p>
+
+<h1 id="2-페이지-대치-알고리즘">2. 페이지 대치 알고리즘</h1>
+
+<p><img src="./img/os11_25.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_26.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_27.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_28.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_29.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_30.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_31.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_32.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_33.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_34.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_35.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_36.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_37.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_38.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_39.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_40.png" alt="" /></p>
+
+<p>aaa</p>
+
+<h1 id="3-스래싱">3. 스래싱</h1>
+
+<p><img src="./img/os11_41.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_42.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_43.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_44.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_45.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_46.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_47.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_48.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_49.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_50.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_51.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_52.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_53.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_54.png" alt="" /></p>
+
+<p>aaa</p>
+
+<p><img src="./img/os11_55.png" alt="" /></p>
+
+<h2 id="확인하기">확인하기</h2>
+
+<p><img src="./img/os11_56.png" alt="" /></p>
+
+<h2 id="정리하기">정리하기</h2>
+
+<ul>
+  <li>가상 메모리 기법을 사용하여 사요자가 메인 메모리의 용량을 초과한 프로세스에 주소를 지정하여 메모리를 제한없이 사용할 수 있도록 한다.</li>
+  <li>가상 메모리는 보통 요구 페이징 방식으로 구현하여 요구 페이징은 실행에 필요한 시점에 물리 메모리를 할당하여 적재한다.</li>
+  <li>페이지 부재는 물리 메모리에 적재되지 않은 영역에 접근할 때에 발생하며 페이지 부재 빈도를 최대한 낮추어야 성능 저하가 적다.</li>
+  <li>가상 메모리 기법을 도입함으로서 프로그래머가 물리 메모리의 크기를 신경쓰지 않아도 되었고, 다중 프로그래밍의 정도가 증가 하였다.</li>
+  <li>물리 메모리량에 대한 요구량이 시스템의 메모리 보유치보다 커지면 페이지 대치가 수행되며 이에 대한 여러가지 알고리즘이 제안되고 있다. -&gt; 선입 선출 대치, 초지거페이지 대치, 최근 최소사용 대치등의 방식이 제안되고 있다.</li>
+  <li>페이지 부재가 너무 빈번하게 발생하여 페이지 대치가 계속 일어나는 스래싱이 발생할 수 있다. 이를 해결하기 위해서는 일부 프로세스를 스와핑시켜야 한다.</li>
+  <li>프래싱을 예방하기 위해서 작업집찹 모델을 사용하거나 직접적으로는 페이지 부재비니도 방식을 사용할 수 있다.</li>
+  <li></li>
+</ul>
+
+:ET
